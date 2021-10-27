@@ -64,7 +64,7 @@ public class AddressMap extends FragmentActivity implements OnMapReadyCallback,
     List<Address> start_addresses;
     String phone, id, email, username, uid, branch, order_id, delivery_type, token, address, admin_current_address;
     TextView currentLocation;
-    String apiKey = "AIzaSyA3i33SB95SuSd5jKQPFyaqY0OeCBKWXWM";
+    String apiKey = "Yor API key";
     //polyline object
     private List<Polyline> polylines=null;
 
