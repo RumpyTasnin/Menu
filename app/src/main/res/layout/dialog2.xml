@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="330dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#323131">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/take_away_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="23dp"
+            android:paddingTop="20dp"
+            android:paddingRight="23dp"
+            android:src="@drawable/close"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#323131"
+        android:orientation="vertical"
+
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:text="What time is good?"
+            android:textColor="#E4DDDD"
+            android:textSize="23sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:clipToPadding="true"
+            app:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:id="@+id/twenty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/pressed"
+                android:backgroundTint="#595655"
+                android:backgroundTintMode="add"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/aclonica"
+                    android:text="Asap,Please!"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:layout_marginTop="2dp"
+                   />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Ready to Pickup in 20mins"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="1dp"
+                    android:textSize="14sp"
+                  />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:clipToPadding="true"
+            app:cardCornerRadius="6dp">
+
+            <Button
+                android:id="@+id/forty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/pressed"
+                android:backgroundTint="#595655"
+                android:backgroundTintMode="add"
+                android:text="Ready to Pickup in 40mins"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:orientation="vertical">
+
+            </Button>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:clipToPadding="true"
+            app:cardCornerRadius="6dp">
+
+            <Button
+                android:id="@+id/hour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/pressed"
+                android:backgroundTint="#595655"
+                android:backgroundTintMode="add"
+                android:gravity="center"
+                android:text="Ready to Pickup in an hour"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textAllCaps="false">
+
+
+            </Button>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

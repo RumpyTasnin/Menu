@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:orientation="horizontal"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/layout_toolbar"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:clickable="true"
+            android:background="@drawable/layout_toolbar"
+            android:layout_marginTop="45dp">
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:src="@drawable/black_close" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="bottom"
+            android:text="Profile"
+            android:textColor="#101010"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="#63ECE8E8"
+            ><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="14dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="1"
+              >
+               <ImageView
+                   android:layout_width="0dp"
+                   android:layout_height="30dp"
+                   android:src="@drawable/icon_person"
+                   android:layout_gravity="center"
+                   android:layout_weight=".1"/>
+               <EditText
+                   android:id="@+id/name"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:textSize="16sp"
+                   android:text="Humayra Tasnin"
+                   android:layout_marginLeft="10dp"
+                   android:textColor="#101010"
+                   android:layout_weight=".7"
+                   android:focusable="false"
+                   android:background="@drawable/profile_editbox_style"
+                   android:padding="8dp"
+                   android:focusableInTouchMode="false"
+                   />
+               <TextView
+                   android:id="@+id/name_change"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:textSize="12sp"
+                   android:textColor="#FF9800"
+                   android:gravity="end"
+                   android:text="CHANGE"
+                   android:clickable="true"
+                   android:layout_weight=".2"/>
+           </LinearLayout>
+            <LinearLayout
+                android:id="@+id/update1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/save1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UPDATE"
+                    android:clickable="true"
+                    android:textColor="#FF9800"
+                    android:textSize="12sp"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/cance1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CANCEL"
+                    android:textColor="#FF9800"
+                    android:clickable="true"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp"
+
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_email"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    />
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="humayratasnin097@gmail.com"
+                    android:layout_marginLeft="12dp"
+                    android:textSize="16sp"
+                    android:textColor="#101010"
+
+                   />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="18dp"
+                >
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_phone"
+                    android:layout_gravity="center"
+                    android:layout_weight=".1"/>
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="+8801968568656"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#101010"
+                    android:layout_weight=".9"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="18dp"
+                >
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_address"
+                    android:layout_gravity="center"
+                    android:layout_weight=".1"/>
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="21/5 bizly mohalla, mohammadpur, dhaka1207"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#101010"
+                    android:layout_weight=".7"
+                    android:background="@drawable/profile_editbox_style"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="text"
+                    android:padding="8dp"
+
+
+                    />
+                <TextView
+                    android:id="@+id/address_change"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#FF9800"
+                    android:gravity="end"
+                    android:text="CHANGE"
+                    android:clickable="true"
+                    android:layout_weight=".2"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/update2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:id="@+id/save2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UPDATE"
+                    android:clickable="true"
+                    android:textColor="#FF9800"
+                    android:textSize="12sp"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/cancel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CANCEL"
+                    android:clickable="true"
+                    android:textColor="#FF9800"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:padding="12dp"
+
+    >
+    <LinearLayout
+        android:layout_marginTop="28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_menu_24"
+        android:padding="2dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/cart2"
+        android:layout_marginTop="28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_shopping_cart_24"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:layout_gravity="right"/>
+
+
+</androidx.appcompat.widget.Toolbar>

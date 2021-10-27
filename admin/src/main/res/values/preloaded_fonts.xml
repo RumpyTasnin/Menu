@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/clicker_script</item>
+        <item>@font/hind_madurai_bold</item>
+        <item>@font/hind_madurai_light</item>
+        <item>@font/limelight</item>
+        <item>@font/pacifico</item>
+        <item>@font/quando</item>
+    </array>
+</resources>

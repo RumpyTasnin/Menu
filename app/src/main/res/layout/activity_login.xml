@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:background="@drawable/background3"
+    android:weightSum="12"
+    android:transitionName="login"
+    android:id="@+id/login"
+
+  >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:layout_weight="4"
+      >
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/limelight"
+        android:text="El Café"
+        android:textColor="#E4DDDD"
+        android:textSize="30sp"
+        android:background="@drawable/shape"
+        android:padding="3dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_marginTop="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/limelight"
+        android:text="Happiness"
+        android:textColor="#E4DDDD"
+        android:textSize="56sp"
+
+
+        />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/limelight"
+        android:text="begins"
+        android:textColor="#E4DDDD"
+        android:textSize="56sp"
+        />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/limelight"
+        android:text="with "
+        android:textColor="#E4DDDD"
+        android:textSize="56sp" />
+    <TextView
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/limelight"
+    android:text="Bru"
+    android:textColor="#E4DDDD"
+    android:textSize="56sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:background="@drawable/loginsignup"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/cart_layout"
+            android:padding="10dp"
+            android:text="Sign In"
+            android:textColor="#E4DDDD"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:transitionName="signIn">
+
+        </Button>
+
+        <Button
+            android:id="@+id/newaccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/cart_layout"
+            android:padding="10dp"
+            android:text="Create new account"
+            android:textColor="#E4DDDD"
+            android:textStyle="bold"
+            android:textSize="18sp">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

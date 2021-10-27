@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">#BAB2B2</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="color">#5C5454</item>
+        <item name="android:textColorHint">#ffff</item>
+        <item name="android:iconTint">#ffff</item>
+
+    </style>
+</resources>

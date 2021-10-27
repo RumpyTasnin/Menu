@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="#633E07">
+ <!--<item android:state_pressed="false">
+        <shape android:shape="rectangle">
+          <solid android:color="#633E07"/>
+            <corners android:bottomLeftRadius="6dp"
+                android:bottomRightRadius="6dp"
+                android:topLeftRadius="6dp"
+                android:topRightRadius="6dp"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#633E07"/>
+            <gradient android:startColor="#63303030"
+                android:endColor="#63303030"/>
+            <corners android:bottomLeftRadius="6dp"
+                android:bottomRightRadius="6dp"
+                android:topLeftRadius="6dp"
+                android:topRightRadius="6dp"/>
+        </shape>
+    </item>-->
+    <!-- default -->
+   <!--<item
+        android:state_pressed="false"
+        android:state_focused="false">
+        <shape
+            android:innerRadiusRatio="1"
+            android:shape="rectangle" >
+            <solid android:color="#633E07" />
+            <corners android:bottomLeftRadius="6dp"
+                android:bottomRightRadius="6dp"
+                android:topLeftRadius="6dp"
+                android:topRightRadius="6dp"/>
+
+
+        </shape>
+    </item>
+
+
+    <item
+        android:state_pressed="false"
+        android:state_focused="true">
+        <shape
+            android:innerRadiusRatio="1"
+            android:shape="rectangle" >
+            <solid android:color="#A5814D" />
+
+            <corners android:bottomLeftRadius="6dp"
+                android:bottomRightRadius="6dp"
+                android:topLeftRadius="6dp"
+                android:topRightRadius="6dp"/>
+        </shape></item>
+
+
+    <item
+        android:state_pressed="true"
+        android:state_focused="false">
+        <shape
+            android:innerRadiusRatio="1"
+            android:shape="rectangle" >
+            <solid android:color="#CAA268"/>
+            <corners android:bottomLeftRadius="6dp"
+                android:bottomRightRadius="6dp"
+                android:topLeftRadius="6dp"
+                android:topRightRadius="6dp"/>
+        </shape></item>-->
+</ripple>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="#101010"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:id="@+id/row">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:gravity="start"
+        android:layout_weight="4.9"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/work_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".2"
+            android:src="@drawable/home" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:weightSum="3.5"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/location1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textColor="#E4DDDD"
+                android:text="Home"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:layout_weight="1.5"
+                android:fontFamily="sans-serif-condensed"
+             />
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textColor="#787373"
+                android:text="21/5 bizly mohalla,mohammadpur, dhaka-1207"
+                android:layout_marginLeft="15dp"
+                android:textSize="12sp"
+                android:layout_weight="2"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginBottom="3dp"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/done"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sharp_done_24"
+            android:layout_weight=".8"
+           />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#373636"
+        android:layout_marginLeft="10dp"
+        android:layout_weight=".1"
+        android:layout_marginRight="10dp"/>
+
+
+</LinearLayout>

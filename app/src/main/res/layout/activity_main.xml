@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/progressbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@color/transparent"
+        android:elevation="@dimen/google_1x"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="#554D4D"
+            android:progress="@android:integer/config_longAnimTime"
+            android:visibility="visible"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#101010"
+        android:backgroundTint="#171717"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="135dp"
+            android:layout_weight="2.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/slogan1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quando"
+                android:gravity="center_horizontal"
+                android:text="IT'S GREAT DAY FOR"
+                android:textColor="#654834"
+                android:textSize="17sp"
+
+                />
+
+            <TextView
+                android:id="@+id/slogan2"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quando"
+                android:gravity="center_horizontal"
+                android:paddingTop="1.5dp"
+                android:paddingBottom="10dp"
+                android:text="Coffee"
+                android:textColor="#E4DDDD"
+                android:textSize="28sp"
+
+                />
+        </LinearLayout>
+
+
+        <!-- <ProgressBar
+         android:id="@+id/progressbar_main"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:progressDrawable="@drawable/custom_progressbar"
+
+
+        />
+-->
+
+        <ImageView
+
+            android:id="@+id/cup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:src="@drawable/mug4"
+            android:transitionName="cup" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_weight="6.5"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/limelight"
+                android:gravity="center"
+                android:text="El Café"
+                android:textColor="#E4DDDD"
+                android:textSize="50sp"
+                android:transitionName="logo"
+
+                />
+
+            <!--   <ProgressBar
+                   android:id="@+id/progressbar_main"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_marginTop="10dp"
+                   android:indeterminateTint="#E4DDDD"
+                   android:progress="@android:integer/config_longAnimTime"
+                   android:visibility="invisible" />-->
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

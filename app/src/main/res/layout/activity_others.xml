@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Others"
+    android:orientation="vertical"
+    android:id="@+id/drawerlayout"
+    android:background="@drawable/burger">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout"
+        android:background="#63303030"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <include
+
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="14"
+                >
+
+                <TextView
+                    android:id="@+id/other"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="start"
+                    android:layout_weight="1.1"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/limelight"
+                    android:gravity="start"
+                    android:text="OTHERS"
+                    android:textColor="#ffff"
+                    android:textSize="30sp"
+                    android:paddingLeft="20dp"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="12.9"
+                    android:background="@drawable/layout1"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="35"
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclertextothers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginRight="14dp"
+
+                        android:layout_weight="1"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="34"
+                        >
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_marginTop="30dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/gloria_hallelujah"
+                                    android:gravity="center_horizontal"
+                                    android:text="SANDWICHES"
+                                    android:textColor="#ffff"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/pizza_sandwich"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="serif-monospace"
+                                    android:gravity="center_horizontal"
+                                    android:text="HOUSE SPECIAL PIZZA SANDWICH   -350TK"
+                                    android:textColor="#ffff"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    android:background="#63303030"/>
+                                <TextView
+                                    android:id="@+id/bbq_sandwich"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="serif-monospace"
+                                    android:gravity="center_horizontal"
+                                    android:text="BBQ CHICKEN CHEESE WITH BACON AND MUSHROOM   -310TK"
+                                    android:layout_marginTop="6dp"
+                                    android:textColor="#ffff"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    android:background="#63303030"/>
+                                <TextView
+                                    android:id="@+id/tandoori_sandwich"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="serif-monospace"
+                                    android:gravity="center_horizontal"
+                                    android:text="TANDOORI CHICKEN CHEESE SANDWICH   -320TK"
+                                    android:layout_marginTop="6dp"
+                                    android:textColor="#ffff"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    android:background="#63303030"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/gloria_hallelujah"
+                                    android:gravity="center_horizontal"
+                                    android:text="BURGERS"
+                                    android:textColor="#ffff"
+                                    android:textSize="25sp"
+                                    android:paddingTop="50dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/delight_burger"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="serif-monospace"
+                                    android:gravity="center_horizontal"
+                                    android:text="MAINSTREAM DELIGHT   -330TK"
+                                    android:textColor="#ffff"
+                                    android:textSize="18sp"
+                                    android:background="#63303030"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="10dp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="serif-monospace"
+                                    android:gravity="center_horizontal"
+                                    android:paddingTop="2dp"
+                                    android:paddingBottom="12dp"
+                                    android:text="(100gm chickenpatty,beef salami, jalapeno, mushroom, egg, pickle, honey mustard sauce, mayonnaise.)"
+                                    android:textColor="#ffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/kingkong_burger"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="serif-monospace"
+                                    android:gravity="center_horizontal"
+                                    android:text="KINGKONG BURGER   -350TK"
+                                    android:textColor="#ffff"
+                                    android:textSize="18sp"
+                                    android:paddingTop="10dp"
+                                    android:background="#63303030"
+                                    android:paddingBottom="10dp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="serif-monospace"
+                                    android:gravity="center_horizontal"
+                                    android:text="(100gm chickenpatty 2X, cheese slice 2X, beef salami, beef bacon, jalapeno, mushroom, egg, pickle, honey mustard sauce, mayonnaise.)"
+                                    android:textColor="#ffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:paddingTop="2dp"
+                                    android:paddingBottom="12dp"/>
+                                <TextView
+                                    android:id="@+id/fatty_burger"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="serif-monospace"
+                                    android:gravity="center_horizontal"
+                                    android:background="#63303030"
+                                    android:text="FATTY BURGER   -430TK"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="10dp"
+                                    android:textColor="#ffff"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="serif-monospace"
+                                    android:gravity="center_horizontal"
+                                    android:paddingTop="2dp"
+
+                                    android:text="(100gm chickenpatty 2X, cheese slice 3X, 2layers of beef bacon, bbq sauce, honey mustard sauce.)"
+                                    android:textColor="#ffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/gloria_hallelujah"
+
+                                    android:gravity="center_horizontal"
+                                    android:text="PASTA"
+                                    android:textColor="#ffff"
+                                    android:textSize="25sp"
+                                    android:paddingTop="50dp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/alfredo_pasta"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="serif-monospace"
+                                    android:gravity="center_horizontal"
+                                    android:text="FETTUCCINE ALFREDO   -430TK"
+                                    android:background="#63303030"
+                                    android:textColor="#ffff"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="10dp"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/bolognese_pasta"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="serif-monospace"
+                                    android:gravity="center_horizontal"
+                                    android:text="PASTA BOLOGNESE   -340TK"
+                                    android:background="#63303030"
+                                    android:textColor="#ffff"
+                                    android:textSize="18sp"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="10dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginBottom="80dp"/>
+
+
+                            </LinearLayout>
+                        </ScrollView>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#101010"
+        android:backgroundTint="#171717">
+        <include
+
+            android:id="@+id/navigation_drawer"
+            layout="@layout/navigation_drawer"/>
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
